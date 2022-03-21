@@ -7,9 +7,27 @@ export const MenuStyled = styled.div`
   transform: translateY(-50%);
   z-index: 101;
 
+  @media screen and (max-width: 767px) {
+    top: auto;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transform: none;
+  }
+
   ul {
     margin: 0;
     padding: 0;
+
+    @media screen and (max-width: 767px) {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      flex-wrap: wrap;
+      background-color: rgb(50 50 50 / 40%);
+      box-shadow: 0 0 7px rgb(0 0 0 / 90%);
+      backdrop-filter: blur(4px);
+    }
   }
 `
 
@@ -18,6 +36,10 @@ export const LinkStyled = styled.li`
   font-size: 16px;
   cursor: pointer;
   list-style: none;
+
+  @media screen and (max-width: 767px) {
+    margin: 10px 0;
+  }
 
   a {
     display: flex;
@@ -49,6 +71,10 @@ export const LinkStyled = styled.li`
     height: 50px;
     margin: 0;
     font-weight: 700;
+
+    @media screen and (max-width: 767px) {
+      display: none;
+    }
   }
 
   :hover {

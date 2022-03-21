@@ -9,13 +9,13 @@ export const HomePage = () => {
       <div className="accent"></div>
       <div className="content">
         <div className="img-container">
-          <div className="img"></div>
+          <div className="img" style={{backgroundImage: "url('/images/me.jpg')"}}></div>
         </div>
         <div className="info-container">
           <div className="info">
-            <div className="info__title">Hi, i'm</div>
-            <div className="info__subtitle">front</div>
-            <div className="info__description">description</div>
+            <div className="info__title">Hi, i'm Evgeniy</div>
+            <div className="info__subtitle">Front-end developer</div>
+            <div className="info__description">I'm a front-end ReactJS developer from Russia. I make web-applications in my spare time. At the moment I am developing on PHP on CMS 1C-Bitrix.</div>
             <Button>
               <Link to="/about/" className="info__btn">
                 <FaUser />

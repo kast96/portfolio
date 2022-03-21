@@ -15,6 +15,11 @@ export const ButtonStyled = styled.button`
   color: ${(props) => props.theme.textColor};
   cursor: pointer;
 
+  @media screen and (max-width: 767px) {
+    right: 10px;
+    top: 10px;
+  }
+
   :hover {
     background-color: ${(props) => props.theme.mainColor};
     color: ${(props) => props.theme.textBtnHoverColor};
