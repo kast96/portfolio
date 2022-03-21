@@ -1,26 +1,40 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { Provider, useSelector } from 'react-redux';
+import {BrowserRouter, Routes, Route} from 'react-router-dom';
+import Header from './components/Header/Header';
+import store from './redux/redux-store';
+import { getTheme } from './redux/app-selectors';
+import { THEMES } from './redux/app-reducer';
+import { ThemeProvider } from "styled-components";
+import { AppStyled } from './App.styled';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+const App = () => {
+	const themeName = useSelector(getTheme)
+	const theme = THEMES[themeName]
+
+	return (
+		<ThemeProvider theme={theme}>
+			<AppStyled>
+				<BrowserRouter basename={process.env.PUBLIC_URL}>
+					<Header />
+					<Routes>
+						<Route path="/" element={<div>home</div>} />
+						<Route path="/about/" element={<div>about</div>} />
+						<Route path="/portfolio/" element={<div>portfolio</div>} />
+						<Route path="/contacts/" element={<div>contacts</div>} />
+						<Route path="*" element={<div>404</div>} />
+					</Routes>
+				</BrowserRouter>
+			</AppStyled>
+		</ThemeProvider>
+	)
 }
 
-export default App;
+const AppContainer = () => {
+	return (
+		<Provider store={store}>
+			<App />
+		</Provider>
+	)
+}
+
+export default AppContainer;
