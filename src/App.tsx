@@ -6,6 +6,10 @@ import { getTheme } from './redux/app-selectors';
 import { THEMES } from './redux/app-reducer';
 import { ThemeProvider } from "styled-components";
 import { AppStyled } from './App.styled';
+import { HomePage } from './components/pages/HomePage/HomePage';
+import { AboutPage } from './components/pages/AboutPage/AboutPage';
+import { PortfolioPage } from './components/pages/PortfolioPage/PortfolioPage';
+import { ContactsPage } from './components/pages/ContactsPage/ContactsPage';
 
 const App = () => {
 	const themeName = useSelector(getTheme)
@@ -17,10 +21,10 @@ const App = () => {
 				<BrowserRouter basename={process.env.PUBLIC_URL}>
 					<Header />
 					<Routes>
-						<Route path="/" element={<div>home</div>} />
-						<Route path="/about/" element={<div>about</div>} />
-						<Route path="/portfolio/" element={<div>portfolio</div>} />
-						<Route path="/contacts/" element={<div>contacts</div>} />
+						<Route path="/" element={<HomePage />} />
+						<Route path="/about/" element={<AboutPage />} />
+						<Route path="/portfolio/" element={<PortfolioPage />} />
+						<Route path="/contacts/" element={<ContactsPage />} />
 						<Route path="*" element={<div>404</div>} />
 					</Routes>
 				</BrowserRouter>

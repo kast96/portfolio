@@ -5,7 +5,7 @@ const SET_THEME = 'portfolio/app/SET-THEME'
 export const THEMES = {
   light: {
     mainColor: "#72b626",
-    textColor: '#000',
+    textColor: '#444',
     textBtnHoverColor: '#fff',
     bgColor: '#fff',
     bgBtnColor: '#ddd',

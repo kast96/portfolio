@@ -5,7 +5,7 @@ export const MenuStyled = styled.div`
   right: 30px;
   top: 50%;
   transform: translateY(-50%);
-  z-index: 10;
+  z-index: 101;
 
   ul {
     margin: 0;
@@ -14,23 +14,23 @@ export const MenuStyled = styled.div`
 `
 
 export const LinkStyled = styled.li`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
   margin: 20px 0;
-  z-index: 101;
   font-size: 16px;
-  background-color: ${(props) => props.theme.bgBtnColor};
-  color: ${(props) => props.theme.textColor};
   cursor: pointer;
-  transition: all .3s;
+  list-style: none;
 
   a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 50px;
+    height: 50px;
     color: ${(props) => props.theme.textColor};
+    background-color: ${(props) => props.theme.bgBtnColor};
+    text-decoration: none;
+    border-radius: 50%;
+    transition: all .3s;
   }
 
   span {
@@ -52,13 +52,6 @@ export const LinkStyled = styled.li`
   }
 
   :hover {
-    color: ${(props) => props.theme.textBtnHoverColor};
-    background-color: ${(props) => props.theme.mainColor};
-
-    a {
-      color: ${(props) => props.theme.textBtnHoverColor};
-    }
-
     span {
       opacity: 1;
       right: 27px;
@@ -67,5 +60,11 @@ export const LinkStyled = styled.li`
       border-radius: 30px 0 0 30px;
       background-color: ${(props) => props.theme.mainColor};
     }
+  }
+
+  a.active,
+  :hover a {
+    color: ${(props) => props.theme.textBtnHoverColor};
+    background-color: ${(props) => props.theme.mainColor};
   }
 `

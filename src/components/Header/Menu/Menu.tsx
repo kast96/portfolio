@@ -1,5 +1,5 @@
 import { FaHome, FaUser, FaBriefcase, FaEnvelope } from "react-icons/fa"
-import { Link } from "react-router-dom"
+import { NavLink } from "react-router-dom"
 import { MenuStyled, LinkStyled } from "./Menu.styled"
 
 export const Menu = () => {
@@ -7,28 +7,28 @@ export const Menu = () => {
     <MenuStyled>
       <ul>
       <LinkStyled>
-        <Link to="/">
+        <NavLink to="/">
           <FaHome />
           <span>Home</span>
-        </Link>
+        </NavLink>
       </LinkStyled>
       <LinkStyled>
-        <Link to="/about/">
+        <NavLink to="/about/">
           <FaUser />
           <span>About</span>
-        </Link>
+        </NavLink>
       </LinkStyled>
       <LinkStyled>
-        <Link to="/portfolio/">
+        <NavLink to="/portfolio/">
           <FaBriefcase />
           <span>Portfolio</span>
-        </Link>
+        </NavLink>
       </LinkStyled>
       <LinkStyled>
-        <Link to="/contacts/">
+        <NavLink to="/contacts/">
           <FaEnvelope />
           <span>Contacts</span>
-        </Link>
+        </NavLink>
       </LinkStyled>
       </ul>
     </MenuStyled>

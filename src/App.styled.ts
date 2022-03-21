@@ -10,8 +10,11 @@ export const AppStyled = styled.div`
     font-stretch: 25% 151%;
   }
 
-  font-family: 'Montserrat';
   flex: 1 0 auto;
   background-color: ${(props) => props.theme.bgColor};
   color: ${(props) => props.theme.textColor};
+
+  * {
+    font-family: 'Montserrat';
+  }
 `
