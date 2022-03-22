@@ -70,4 +70,17 @@ export const AboutPageStyled = styled.div`
       font-weight: 700;
     }
   }
+
+  .stack {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .stack-item {
+    width: 25%;
+    text-align: center;
+    margin-bottom: 40px;
+    padding: 20px;
+    box-sizing: border-box;
+  }
 `

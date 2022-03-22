@@ -1,4 +1,6 @@
+import { FaHtml5, FaJs, FaPhp, FaReact, FaSass } from "react-icons/fa"
 import { AboutPageStyled } from "./AboutPage.styled"
+import SvgBitrix from "../../../images/icons/1c_bitrix"
 
 export const AboutPage = () => {
   type PersonalInfoItemType = {
@@ -16,6 +18,20 @@ export const AboutPage = () => {
     {name: 'Telegram', value: '@kast96'},
     {name: 'GitHub', value: 'github.com/kast96'},
   ] as Array<PersonalInfoItemType>
+
+  type StackItemType = {
+    name: string
+    icon: JSX.Element
+  }
+
+  let stack = [
+    {name: 'React', icon: <FaReact />},
+    {name: 'Javascript', icon: <FaJs />},
+    {name: 'Sass/Css', icon: <FaSass />},
+    {name: 'Html', icon: <FaHtml5 />},
+    {name: 'Php', icon: <FaPhp />},
+    {name: '1C-Bitrix', icon: <SvgBitrix />},
+  ] as Array<StackItemType>
 
   return (
     <AboutPageStyled>
@@ -36,6 +52,14 @@ export const AboutPage = () => {
             </div>
           </div>
           <h2 className="subtitle">My Stack</h2>
+          <div className="stack">
+            {stack.map(item => (
+              <div className="stack-item">
+                <div className="stack__icon">{item.icon}</div>
+                <div className="stack__name">{item.name}</div>
+              </div>
+            ))}
+          </div>
       </div>
     </AboutPageStyled>
   )
