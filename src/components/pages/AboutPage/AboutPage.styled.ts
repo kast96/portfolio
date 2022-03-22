@@ -115,4 +115,77 @@ export const AboutPageStyled = styled.div`
       text-transform: uppercase;
     }
   }
+
+  .way {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .way-item {
+    display: flex;
+    width: 50%;
+    padding: 20px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+
+    @media screen and (max-width: 767px) {
+      width: 100%;
+    }
+
+    &__left {
+      position: relative;
+      margin-right: 20px;
+
+      &::before {
+        content: '';
+        display: inline-block;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 50%;
+        border-right: 1px solid ${(props) => props.theme.bgBtnColor};
+        z-index: 1;
+      }
+    }
+
+    &__icon {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      width: 50px;
+      height: 50px;
+      background-color: ${(props) => props.theme.mainColor};
+      border-radius: 50%;
+      z-index: 2;
+      font-size: 20px;
+      color: ${(props) => props.theme.textBtnHoverColor};
+      font-size: 16px;
+    }
+
+    &__date {
+      display: inline-block;
+      border: 1px solid ${(props) => props.theme.mainColor};
+      border-radius: 20px;
+      padding: 2px 10px;
+      font-size: 14px;
+      margin-bottom: 10px;
+    }
+
+    &__title {
+      font-size: 18px;
+      font-weight: 700;
+      margin-bottom: 2px;
+    }
+
+    &__subtitle {
+      font-size: 16px;
+      font-weight: 600;
+      margin-bottom: 2px;
+    }
+
+    &__description {
+      margin-top: 8px;
+    }
+  }
 `

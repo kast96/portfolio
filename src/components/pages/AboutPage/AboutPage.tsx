@@ -1,4 +1,4 @@
-import { FaCss3Alt, FaGithub, FaHtml5, FaJsSquare, FaNodeJs, FaPhp, FaReact, FaSass, FaYarn } from "react-icons/fa"
+import { FaBriefcase, FaCss3Alt, FaGithub, FaHtml5, FaJsSquare, FaNodeJs, FaPhp, FaReact, FaSass, FaYarn } from "react-icons/fa"
 import { AboutPageStyled } from "./AboutPage.styled"
 import SvgBitrix from "../../../images/icons/1c_bitrix"
 import SvgTs from "../../../images/icons/ts"
@@ -42,11 +42,24 @@ export const AboutPage = () => {
     {name: 'Yarn', code: 'yarn', icon: <FaYarn />},
   ] as Array<StackItemType>
 
+  type WayItemType = {
+    title: string
+    date: string
+    subtitle?: string
+    description?: string
+    icon: JSX.Element
+  }
+
+  let way = [
+    {title: 'Work', subtitle: 'Company', date: '2020', description: 'qweqwewqe', icon: <FaBriefcase />},
+    {title: 'Work', subtitle: 'Company', date: '2020', description: 'qweqwewqe', icon: <FaBriefcase />},
+  ] as Array<WayItemType>
+
   return (
     <AboutPageStyled>
       <div className="container">
-          <h1 className="title">About <span>me</span></h1>
-          <h2 className="subtitle">Personal information</h2>
+          <h1 className="title">About <span>Me</span></h1>
+          <h2 className="subtitle">Personal Information</h2>
           <div className="personal-info">
             <div className="personal-info-photo">
               <div className="img" style={{backgroundImage: "url('/images/me.jpg')"}}></div>
@@ -60,12 +73,34 @@ export const AboutPage = () => {
               ))}
             </div>
           </div>
-          <h2 className="subtitle">My Stack</h2>
+          <h2 className="subtitle">My Stack and Expirience</h2>
           <div className="stack">
             {stack.map(item => (
               <div className="stack-item">
                 <div className={`stack-item__icon --${item.code}`}>{item.icon}</div>
                 <div className="stack-item__name">{item.name}</div>
+              </div>
+            ))}
+          </div>
+          <h2 className="subtitle">My Way and Education</h2>
+          <div className="way">
+            {way.map(item => (
+              <div className="way-item">
+                <div className="way-item__left">
+                  <div className="way-item__icon">
+                    {item.icon}
+                  </div>
+                </div>
+                <div className="way-item__right">
+                  <div className="way-item__date">{item.date}</div>
+                  <div className="way-item__title">{item.title}</div>
+                  {item.subtitle &&
+                    <div className="way-item__subtitle">{item.subtitle}</div>
+                  }
+                  {item.description &&
+                    <div className="way-item__description">{item.description}</div>
+                  }
+                </div>
               </div>
             ))}
           </div>
