@@ -9,7 +9,8 @@ export const AppStyled = styled.div`
     padding-bottom: 60px;
   }
 
-  .title {
+  .title,
+  .subtitle {
     span {
       color: ${(props) => props.theme.mainColor};
     }

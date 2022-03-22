@@ -119,6 +119,7 @@ export const AboutPageStyled = styled.div`
   .way {
     display: flex;
     flex-wrap: wrap;
+    margin-bottom: 40px;
   }
 
   .way-item {
@@ -175,17 +176,19 @@ export const AboutPageStyled = styled.div`
     &__title {
       font-size: 18px;
       font-weight: 700;
-      margin-bottom: 2px;
+      margin-bottom: 4px;
+      text-transform: uppercase;
     }
 
     &__subtitle {
-      font-size: 16px;
+      font-size: 14px;
       font-weight: 600;
-      margin-bottom: 2px;
+      text-transform: uppercase;
+      color: ${(props) => props.theme.mainColor};
     }
 
     &__description {
-      margin-top: 8px;
+      margin-top: 16px;
     }
   }
 `

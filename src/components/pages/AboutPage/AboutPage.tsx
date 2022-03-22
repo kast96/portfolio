@@ -1,4 +1,4 @@
-import { FaBriefcase, FaCss3Alt, FaGithub, FaHtml5, FaJsSquare, FaNodeJs, FaPhp, FaReact, FaSass, FaYarn } from "react-icons/fa"
+import { FaBriefcase, FaCss3Alt, FaGithub, FaGraduationCap, FaHtml5, FaJsSquare, FaNodeJs, FaPhp, FaReact, FaSass, FaUniversity, FaYarn } from "react-icons/fa"
 import { AboutPageStyled } from "./AboutPage.styled"
 import SvgBitrix from "../../../images/icons/1c_bitrix"
 import SvgTs from "../../../images/icons/ts"
@@ -51,15 +51,17 @@ export const AboutPage = () => {
   }
 
   let way = [
-    {title: 'Work', subtitle: 'Company', date: '2020', description: 'qweqwewqe', icon: <FaBriefcase />},
-    {title: 'Work', subtitle: 'Company', date: '2020', description: 'qweqwewqe', icon: <FaBriefcase />},
+    {title: 'Completed a course of ReactJS', subtitle: 'IT-Kamasutra', date: '2021 - 2022', description: 'Studied React, Redux, SPA, FLUX, TypeScript and other. Developed a social network application', icon: <FaGraduationCap />},
+    {title: 'Middle Full-stack 1C-Bitrix', subtitle: 'Expansio', date: '2019 - Present', description: 'Received advanced development experience in 1C-Bitrix CMS. Made several modules and templates. Supported client projects.', icon: <FaBriefcase />},
+    {title: 'Junior Full-stack 1C-Bitrix', subtitle: 'ALFA Systems', date: '2018 - 2019', description: 'Work on client projects and templates on PHP in CMS 1C-Bitrix. Got experience with packages in node.js and build', icon: <FaBriefcase />},
+    {title: 'University Education', subtitle: 'Penza State University', date: '2014 - 2018', description: 'Studied at the Faculty of Computer Engineering, majoring in computer-aided design systems. GPA 4.6/5', icon: <FaUniversity />},
   ] as Array<WayItemType>
 
   return (
     <AboutPageStyled>
-      <div className="container">
+      <div className="container container-page">
           <h1 className="title">About <span>Me</span></h1>
-          <h2 className="subtitle">Personal Information</h2>
+          <h2 className="subtitle"><span>Personal</span> Information</h2>
           <div className="personal-info">
             <div className="personal-info-photo">
               <div className="img" style={{backgroundImage: "url('/images/me.jpg')"}}></div>
@@ -73,7 +75,7 @@ export const AboutPage = () => {
               ))}
             </div>
           </div>
-          <h2 className="subtitle">My Stack and Expirience</h2>
+          <h2 className="subtitle"><span>My Stack</span> and Expirience</h2>
           <div className="stack">
             {stack.map(item => (
               <div className="stack-item">
@@ -82,7 +84,7 @@ export const AboutPage = () => {
               </div>
             ))}
           </div>
-          <h2 className="subtitle">My Way and Education</h2>
+          <h2 className="subtitle"><span>My Way</span> and Education</h2>
           <div className="way">
             {way.map(item => (
               <div className="way-item">
