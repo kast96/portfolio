@@ -81,8 +81,7 @@ export const HomePageStyled = styled.div`
 
     @media screen and (max-width: 991px) {
       width: 100%;
-      padding-top: 0;
-      padding-right: 20px;
+      padding: 0 20px 40px;
     }
   }
 
@@ -95,7 +94,7 @@ export const HomePageStyled = styled.div`
     
     &__title {
       font-size: 60px;
-      font-weight: 700;
+      font-weight: 900;
       text-transform: uppercase;
       color: ${(props) => props.theme.mainColor};
 
@@ -106,7 +105,7 @@ export const HomePageStyled = styled.div`
 
     &__subtitle {
       font-size: 40px;
-      font-weight: 700;
+      font-weight: 900;
       margin-bottom: 20px;
       text-transform: uppercase;
 
@@ -117,6 +116,7 @@ export const HomePageStyled = styled.div`
 
     &__description {
       margin-bottom: 30px;
+      line-height: 24px;
     }
 
     &__btn {
