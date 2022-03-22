@@ -43,6 +43,9 @@ export const HomePageStyled = styled.div`
   }
 
   .img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 40%;
 
     @media screen and (max-width: 991px) {
@@ -50,7 +53,10 @@ export const HomePageStyled = styled.div`
     }
 
     .img {
+      flex: 1;
       height: 100%;
+      max-width: 600px;
+      max-height: 800px;
       background-color: rgb(255 255 255 / 20%);
       box-shadow: 0 0 7px rgb(0 0 0 / 90%);
       backdrop-filter: blur(4px);
@@ -111,6 +117,14 @@ export const HomePageStyled = styled.div`
 
     &__description {
       margin-bottom: 30px;
+    }
+
+    &__btn {
+      svg {
+        margin-left: 10px;
+        margin-right: 0;
+        font-size: 14px;
+      }
     }
   }
 `

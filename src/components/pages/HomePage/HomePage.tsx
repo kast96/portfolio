@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom"
 import { Button } from "../../common/Button/Button"
 import { HomePageStyled } from "./HomePage.styled"
-import { FaUser } from "react-icons/fa"
+import { FaArrowRight } from "react-icons/fa"
 
 export const HomePage = () => {
   return (
@@ -18,8 +18,8 @@ export const HomePage = () => {
             <div className="info__description">I'm a front-end ReactJS developer from Russia. I make web-applications in my spare time. At the moment I am developing on PHP on CMS 1C-Bitrix.</div>
             <Button>
               <Link to="/about/" className="info__btn">
-                <FaUser />
-                <span>About</span>
+                <span>About me</span>
+                <FaArrowRight />
               </Link>
             </Button>
           </div>
