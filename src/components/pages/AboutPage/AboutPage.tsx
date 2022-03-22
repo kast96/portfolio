@@ -24,7 +24,7 @@ export const AboutPage = () => {
           <h2 className="subtitle">Personal information</h2>
           <div className="personal-info">
             <div className="personal-info-photo">
-              <div className="img" style={{/*backgroundImage: "url('/images/me.jpg')"*/}}></div>
+              <div className="img" style={{backgroundImage: "url('/images/me.jpg')"}}></div>
             </div>
             <div className="personal-info-items">
               {personalInfo.map(item => (

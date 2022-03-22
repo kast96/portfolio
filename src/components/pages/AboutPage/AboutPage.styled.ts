@@ -59,6 +59,7 @@ export const AboutPageStyled = styled.div`
     @media screen and (max-width: 991px) {
       width: 100%;
       justify-content: center;
+      margin: 8px 0;
     }
 
     &__name {
