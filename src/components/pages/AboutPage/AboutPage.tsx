@@ -1,6 +1,8 @@
-import { FaHtml5, FaJs, FaPhp, FaReact, FaSass } from "react-icons/fa"
+import { FaCss3Alt, FaGithub, FaHtml5, FaJsSquare, FaNodeJs, FaPhp, FaReact, FaSass, FaYarn } from "react-icons/fa"
 import { AboutPageStyled } from "./AboutPage.styled"
 import SvgBitrix from "../../../images/icons/1c_bitrix"
+import SvgTs from "../../../images/icons/ts"
+import SvgRedux from "../../../images/icons/redux"
 
 export const AboutPage = () => {
   type PersonalInfoItemType = {
@@ -21,16 +23,23 @@ export const AboutPage = () => {
 
   type StackItemType = {
     name: string
+    code: string
     icon: JSX.Element
   }
 
   let stack = [
-    {name: 'React', icon: <FaReact />},
-    {name: 'Javascript', icon: <FaJs />},
-    {name: 'Sass/Css', icon: <FaSass />},
-    {name: 'Html', icon: <FaHtml5 />},
-    {name: 'Php', icon: <FaPhp />},
-    {name: '1C-Bitrix', icon: <SvgBitrix />},
+    {name: 'React', code: 'react', icon: <FaReact />},
+    {name: 'Redux', code: 'redux', icon: <SvgRedux />},
+    {name: 'Typescript', code: 'ts', icon: <SvgTs />},
+    {name: 'Javascript', code: 'js', icon: <FaJsSquare />},
+    {name: 'Node', code: 'node', icon: <FaNodeJs />},
+    {name: 'SASS', code: 'sass', icon: <FaSass />},
+    {name: 'CSS', code: 'css', icon: <FaCss3Alt />},
+    {name: 'HTML', code: 'html', icon: <FaHtml5 />},
+    {name: 'PHP', code: 'php', icon: <FaPhp />},
+    {name: '1C-Bitrix', code: 'bitrix', icon: <SvgBitrix />},
+    {name: 'Git', code: 'git', icon: <FaGithub />},
+    {name: 'Yarn', code: 'yarn', icon: <FaYarn />},
   ] as Array<StackItemType>
 
   return (
@@ -55,8 +64,8 @@ export const AboutPage = () => {
           <div className="stack">
             {stack.map(item => (
               <div className="stack-item">
-                <div className="stack__icon">{item.icon}</div>
-                <div className="stack__name">{item.name}</div>
+                <div className={`stack-item__icon --${item.code}`}>{item.icon}</div>
+                <div className="stack-item__name">{item.name}</div>
               </div>
             ))}
           </div>

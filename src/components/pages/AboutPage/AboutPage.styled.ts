@@ -82,5 +82,37 @@ export const AboutPageStyled = styled.div`
     margin-bottom: 40px;
     padding: 20px;
     box-sizing: border-box;
+
+    @media screen and (max-width: 991px) {
+      width: 33.3333%;
+    }
+
+    @media screen and (max-width: 767px) {
+      width: 50%;
+    }
+
+    &__icon {
+      font-size: 64px;
+      color: ${(props) => props.theme.mainColor};
+
+      &.--react {color: #5ed4f4}
+      &.--redux {color: #7248b7}
+      &.--ts {color: #3178c6}
+      &.--js {color: #f0d91e}
+      &.--node {color: #72b100}
+      &.--sass {color: #c76495}
+      &.--css {color: #116fb2}
+      &.--html {color: #de4a24}
+      &.--php {color: #7477ae}
+      &.--bitrix {color: #c10d2f}
+      &.--git {color: ${(props) => props.theme.textColor}}
+      &.--yarn {color: #2a8ab5}
+    }
+
+    &__name {
+      font-size: 16px;
+      font-weight: 600;
+      text-transform: uppercase;
+    }
   }
 `
