@@ -8,4 +8,10 @@ export const AppStyled = styled.div`
   @media screen and (max-width: 767px) {
     padding-bottom: 60px;
   }
+
+  .title {
+    span {
+      color: ${(props) => props.theme.mainColor};
+    }
+  }
 `
