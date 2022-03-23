@@ -7,7 +7,7 @@ export const HomePage = () => {
   return (
     <HomePageStyled>
       <div className="accent"></div>
-      <div className="content">
+      <div className="container content">
         <div className="img-container">
           <div className="img" style={{backgroundImage: "url('/images/me.jpg')"}}></div>
         </div>

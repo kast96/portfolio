@@ -5,7 +5,7 @@ export const HomePageStyled = styled.div`
     display: inline-block;
     position: absolute;
     top: 0;
-    left: -50%;
+    left: -60%;
     bottom: 0;
     width: 70%;
     background-color: ${(props) => props.theme.mainColor};
@@ -56,7 +56,7 @@ export const HomePageStyled = styled.div`
       flex: 1;
       height: 100%;
       max-width: 600px;
-      max-height: 800px;
+      max-height: 600px;
       background-color: rgb(255 255 255 / 20%);
       box-shadow: 0 0 7px rgb(0 0 0 / 90%);
       backdrop-filter: blur(4px);

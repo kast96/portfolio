@@ -31,6 +31,12 @@ code {
   margin-bottom: 100px;
 }
 
+@media (max-width: 767px) {
+  .container-page {
+    margin-bottom: 0;
+  }
+}
+
 .container {
   width: 100%;
   padding-right: 15px;
