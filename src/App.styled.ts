@@ -17,17 +17,17 @@ export const AppStyled = styled.div`
   }
 
   .icon-color {
-    &--react {color: #5ed4f4}
-    &--redux {color: #7248b7}
-    &--ts {color: #3178c6}
-    &--js {color: #f0d91e}
-    &--node {color: #72b100}
-    &--sass {color: #c76495}
-    &--css {color: #116fb2}
-    &--html {color: #de4a24}
-    &--php {color: #7477ae}
-    &--bitrix {color: #c10d2f}
-    &--git {color: ${(props) => props.theme.textColor}}
-    &--yarn {color: #2a8ab5}
+    &--react {color: #5ed4f4 !important}
+    &--redux {color: #7248b7 !important}
+    &--ts {color: #3178c6 !important}
+    &--js {color: #f0d91e !important}
+    &--node {color: #72b100 !important}
+    &--sass {color: #c76495 !important}
+    &--css {color: #116fb2 !important}
+    &--html {color: #de4a24 !important}
+    &--php {color: #7477ae !important}
+    &--bitrix {color: #c10d2f !important}
+    &--git {color: ${(props) => props.theme.textColor} !important}
+    &--yarn {color: #2a8ab5 !important}
   }
 `

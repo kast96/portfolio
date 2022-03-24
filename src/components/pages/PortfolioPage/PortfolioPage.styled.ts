@@ -4,7 +4,7 @@ export const PortfolioPageStyled = styled.div`
   .portfolio {
     display: flex;
     flex-wrap: wrap;
-    margin: 0 -30px;
+    margin: 0 -15px;
     box-sizing: border-box;
   }
 
@@ -44,6 +44,7 @@ export const PortfolioPageStyled = styled.div`
       background-size: cover;
       background-position: center center;
       border-radius: 20px;
+      background-color: ${(props) => props.theme.mainColor};
     }
 
     a {

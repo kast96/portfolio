@@ -4,7 +4,7 @@ import { PortfolioPageStyled } from "./PortfolioPage.styled"
 export const PortfolioPage = () => {
 	type ProjectItemType = {
 		name: string
-		img: string
+		img?: string
 		project?: string
 		link?: string
 		stack?: Array<{
@@ -26,7 +26,6 @@ export const PortfolioPage = () => {
 		},
 		{
 			name: 'Project',
-			img: '/images/me.jpg',
 			project: 'project',
 			link: '#test',
 			stack: [
@@ -45,7 +44,7 @@ export const PortfolioPage = () => {
 						<div className="portfolio-item-container">
 							<div className="portfolio-item">
 								<div className="portfolio-item__img-container">
-									<div className="portfolio-item__img" style={{backgroundImage: `url('${item.img}')`}}></div>
+									<div className="portfolio-item__img" style={{backgroundImage: item.img ? `url('${item.img}')` : 'none'}}></div>
 								</div>
 								<span className="portfolio-item__name">{item.name}</span>
 								{item.project && 
