@@ -1,5 +1,8 @@
-import { FaFileAlt, FaJsSquare, FaLink, FaReact } from "react-icons/fa"
+import { FaCss3Alt, FaFileAlt, FaGithub, FaHtml5, FaJsSquare, FaLink, FaNodeJs, FaPhp, FaReact, FaSass } from "react-icons/fa"
 import { PortfolioPageStyled } from "./PortfolioPage.styled"
+import SvgBitrix from "../../../images/icons/1c_bitrix"
+import SvgTs from "../../../images/icons/ts"
+import SvgRedux from "../../../images/icons/redux"
 
 export const PortfolioPage = () => {
 	type ProjectItemType = {
@@ -15,22 +18,171 @@ export const PortfolioPage = () => {
 
 	let portfolio = [
 		{
-			name: 'Project',
-			img: '/images/me.jpg',
-			project: 'project',
-			link: '#test',
+			name: 'React Social',
+			project: 'React App',
+			link: 'https://github.com/kast96/social',
 			stack: [
 				{code: 'react', icon: <FaReact />},
-				{code: 'js', icon: <FaJsSquare />}
+				{code: 'redux', icon: <SvgRedux />},
+				{code: 'ts', icon: <SvgTs />},
+				{code: 'js', icon: <FaJsSquare />},
+				{code: 'sass', icon: <FaSass />},
+				{code: 'git', icon: <FaGithub />},
 			]
 		},
 		{
-			name: 'Project',
-			project: 'project',
-			link: '#test',
+			name: 'React Tasks',
+			project: 'React Native App',
+			link: 'https://github.com/kast96/tasks',
 			stack: [
 				{code: 'react', icon: <FaReact />},
-				{code: 'js', icon: <FaJsSquare />}
+				{code: 'redux', icon: <SvgRedux />},
+				{code: 'js', icon: <FaJsSquare />},
+				{code: 'sass', icon: <FaSass />},
+				{code: 'git', icon: <FaGithub />},
+			]
+		},
+		{
+			name: 'React Novel',
+			project: 'React App',
+			link: 'https://github.com/kast96/novel',
+			stack: [
+				{code: 'react', icon: <FaReact />},
+				{code: 'redux', icon: <SvgRedux />},
+				{code: 'js', icon: <FaJsSquare />},
+				{code: 'sass', icon: <FaSass />},
+				{code: 'git', icon: <FaGithub />},
+			]
+		},
+		{
+			name: 'React SpaceX',
+			project: 'React App',
+			link: 'https://github.com/kast96/spacex',
+			stack: [
+				{code: 'react', icon: <FaReact />},
+				{code: 'redux', icon: <SvgRedux />},
+				{code: 'js', icon: <FaJsSquare />},
+				{code: 'sass', icon: <FaSass />},
+				{code: 'git', icon: <FaGithub />},
+			]
+		},
+		{
+			name: 'Sitemap Generator',
+			project: 'Module for 1C-Bitrix',
+			stack: [
+				{code: 'bitrix', icon: <SvgBitrix />},
+				{code: 'php', icon: <FaPhp />},
+				{code: 'js', icon: <FaJsSquare />},
+				{code: 'css', icon: <FaCss3Alt />},
+				{code: 'html', icon: <FaHtml5 />},
+				{code: 'git', icon: <FaGithub />},
+			]
+		},
+		{
+			name: 'SEO Generator',
+			project: 'Module for 1C-Bitrix',
+			stack: [
+				{code: 'bitrix', icon: <SvgBitrix />},
+				{code: 'php', icon: <FaPhp />},
+				{code: 'js', icon: <FaJsSquare />},
+				{code: 'css', icon: <FaCss3Alt />},
+				{code: 'html', icon: <FaHtml5 />},
+				{code: 'git', icon: <FaGithub />},
+			]
+		},
+		{
+			name: 'Module of redirects',
+			project: 'Module for 1C-Bitrix',
+			stack: [
+				{code: 'bitrix', icon: <SvgBitrix />},
+				{code: 'php', icon: <FaPhp />},
+				{code: 'js', icon: <FaJsSquare />},
+				{code: 'css', icon: <FaCss3Alt />},
+				{code: 'html', icon: <FaHtml5 />},
+				{code: 'git', icon: <FaGithub />},
+			]
+		},
+		{
+			name: 'Marioberlucci',
+			project: 'Site improvements',
+			link: 'https://marioberlucci.ru/',
+			stack: [
+				{code: 'bitrix', icon: <SvgBitrix />},
+				{code: 'php', icon: <FaPhp />},
+				{code: 'node', icon: <FaNodeJs />},
+				{code: 'js', icon: <FaJsSquare />},
+				{code: 'css', icon: <FaCss3Alt />},
+				{code: 'html', icon: <FaHtml5 />},
+				{code: 'git', icon: <FaGithub />},
+			]
+		},
+		{
+			name: 'Dykat',
+			project: 'Site a turn-key basis',
+			stack: [
+				{code: 'bitrix', icon: <SvgBitrix />},
+				{code: 'php', icon: <FaPhp />},
+				{code: 'js', icon: <FaJsSquare />},
+				{code: 'css', icon: <FaCss3Alt />},
+				{code: 'html', icon: <FaHtml5 />},
+			]
+		},
+		{
+			name: 'Nordski',
+			project: 'Site a turn-key basis',
+			stack: [
+				{code: 'bitrix', icon: <SvgBitrix />},
+				{code: 'php', icon: <FaPhp />},
+				{code: 'js', icon: <FaJsSquare />},
+				{code: 'css', icon: <FaCss3Alt />},
+				{code: 'html', icon: <FaHtml5 />},
+			]
+		},
+		{
+			name: 'Santalux',
+			project: 'Site improvements',
+			link: "https://santalux.ru",
+			stack: [
+				{code: 'bitrix', icon: <SvgBitrix />},
+				{code: 'php', icon: <FaPhp />},
+				{code: 'js', icon: <FaJsSquare />},
+				{code: 'css', icon: <FaCss3Alt />},
+				{code: 'html', icon: <FaHtml5 />},
+			]
+		},
+		{
+			name: 'ХимПромКомплект',
+			project: 'Site a turn-key basis',
+			link: "https://hpk-penza.com/",
+			stack: [
+				{code: 'bitrix', icon: <SvgBitrix />},
+				{code: 'php', icon: <FaPhp />},
+				{code: 'js', icon: <FaJsSquare />},
+				{code: 'css', icon: <FaCss3Alt />},
+				{code: 'html', icon: <FaHtml5 />},
+			]
+		},
+		{
+			name: 'Sensa Massage',
+			project: 'Site improvements',
+			link: "https://sensa-massage.ru",
+			stack: [
+				{code: 'bitrix', icon: <SvgBitrix />},
+				{code: 'php', icon: <FaPhp />},
+				{code: 'js', icon: <FaJsSquare />},
+				{code: 'css', icon: <FaCss3Alt />},
+			]
+		},
+		{
+			name: 'Кристалл',
+			project: 'Site a turn-key basis, improvements',
+			link: "https://vodada.com/",
+			stack: [
+				{code: 'bitrix', icon: <SvgBitrix />},
+				{code: 'php', icon: <FaPhp />},
+				{code: 'js', icon: <FaJsSquare />},
+				{code: 'css', icon: <FaCss3Alt />},
+				{code: 'html', icon: <FaHtml5 />},
 			]
 		},
 	] as Array<ProjectItemType>
