@@ -141,7 +141,7 @@ export const PortfolioPage = () => {
 		{
 			name: 'Santalux',
 			project: 'Site improvements',
-			link: "https://santalux.ru",
+			link: "https://santalux.ru/",
 			stack: [
 				{code: 'bitrix', icon: <SvgBitrix />},
 				{code: 'php', icon: <FaPhp />},
@@ -163,9 +163,9 @@ export const PortfolioPage = () => {
 			]
 		},
 		{
-			name: 'Sensa Massage',
+			name: 'Sensa',
 			project: 'Site improvements',
-			link: "https://sensa-massage.ru",
+			link: "https://sensa-massage.ru/",
 			stack: [
 				{code: 'bitrix', icon: <SvgBitrix />},
 				{code: 'php', icon: <FaPhp />},
