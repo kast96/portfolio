@@ -45,6 +45,7 @@ export const PortfolioPageStyled = styled.div`
       background-position: center center;
       border-radius: 20px;
       background-color: ${(props) => props.theme.mainColor};
+      border: 1px solid #999;
     }
 
     a {

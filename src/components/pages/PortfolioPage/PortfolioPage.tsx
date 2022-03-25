@@ -177,6 +177,7 @@ export const PortfolioPage = () => {
 			name: 'Кристалл',
 			project: 'Site a turn-key basis, improvements',
 			link: "https://vodada.com/",
+			img: "/images/portfolio/vodada.jpg",
 			stack: [
 				{code: 'bitrix', icon: <SvgBitrix />},
 				{code: 'php', icon: <FaPhp />},
