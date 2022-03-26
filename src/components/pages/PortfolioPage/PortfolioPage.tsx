@@ -69,6 +69,7 @@ export const PortfolioPage = () => {
 		{
 			name: 'Sitemap Generator',
 			project: 'Module for 1C-Bitrix',
+			img: "/images/portfolio/sitemap.jpg",
 			stack: [
 				{code: 'bitrix', icon: <SvgBitrix />},
 				{code: 'php', icon: <FaPhp />},
@@ -81,6 +82,7 @@ export const PortfolioPage = () => {
 		{
 			name: 'SEO Generator',
 			project: 'Module for 1C-Bitrix',
+			img: "/images/portfolio/generator.jpg",
 			stack: [
 				{code: 'bitrix', icon: <SvgBitrix />},
 				{code: 'php', icon: <FaPhp />},
@@ -93,6 +95,7 @@ export const PortfolioPage = () => {
 		{
 			name: 'Module of redirects',
 			project: 'Module for 1C-Bitrix',
+			img: "/images/portfolio/redirects.jpg",
 			stack: [
 				{code: 'bitrix', icon: <SvgBitrix />},
 				{code: 'php', icon: <FaPhp />},
