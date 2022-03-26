@@ -106,6 +106,7 @@ export const PortfolioPage = () => {
 			name: 'Marioberlucci',
 			project: 'Site improvements',
 			link: 'https://marioberlucci.ru/',
+			img: "/images/portfolio/mario.jpg",
 			stack: [
 				{code: 'bitrix', icon: <SvgBitrix />},
 				{code: 'php', icon: <FaPhp />},
@@ -119,6 +120,7 @@ export const PortfolioPage = () => {
 		{
 			name: 'Dykat',
 			project: 'Site a turn-key basis',
+			img: "/images/portfolio/dykat.jpg",
 			stack: [
 				{code: 'bitrix', icon: <SvgBitrix />},
 				{code: 'php', icon: <FaPhp />},
@@ -130,6 +132,7 @@ export const PortfolioPage = () => {
 		{
 			name: 'Nordski',
 			project: 'Site a turn-key basis',
+			img: "/images/portfolio/nordski.jpg",
 			stack: [
 				{code: 'bitrix', icon: <SvgBitrix />},
 				{code: 'php', icon: <FaPhp />},
@@ -142,6 +145,7 @@ export const PortfolioPage = () => {
 			name: 'Santalux',
 			project: 'Site improvements',
 			link: "https://santalux.ru/",
+			img: "/images/portfolio/santalux.jpg",
 			stack: [
 				{code: 'bitrix', icon: <SvgBitrix />},
 				{code: 'php', icon: <FaPhp />},
@@ -154,6 +158,7 @@ export const PortfolioPage = () => {
 			name: 'ХимПромКомплект',
 			project: 'Site a turn-key basis',
 			link: "https://hpk-penza.com/",
+			img: "/images/portfolio/hpk.jpg",
 			stack: [
 				{code: 'bitrix', icon: <SvgBitrix />},
 				{code: 'php', icon: <FaPhp />},
@@ -166,6 +171,7 @@ export const PortfolioPage = () => {
 			name: 'Sensa',
 			project: 'Site improvements',
 			link: "https://sensa-massage.ru/",
+			img: "/images/portfolio/sensa.jpg",
 			stack: [
 				{code: 'bitrix', icon: <SvgBitrix />},
 				{code: 'php', icon: <FaPhp />},
