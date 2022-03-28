@@ -35,6 +35,10 @@ export const PortfolioPageStyled = styled.div`
       margin-bottom: 20px;
     }
 
+    &__btn {
+      cursor: pointer;
+    }
+
     &__img {
       display: inline-block;
       position: absolute;

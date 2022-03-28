@@ -3,6 +3,7 @@ import { PortfolioPageStyled } from "./PortfolioPage.styled"
 import SvgBitrix from "../../../images/icons/1c_bitrix"
 import SvgTs from "../../../images/icons/ts"
 import SvgRedux from "../../../images/icons/redux"
+import { Fancybox } from "../../common/Fancybox/Fancybox"
 
 export const PortfolioPage = () => {
 	type ProjectItemType = {
@@ -210,7 +211,11 @@ export const PortfolioPage = () => {
 						<div className="portfolio-item-container">
 							<div className="portfolio-item">
 								<div className="portfolio-item__img-container">
-									<div className="portfolio-item__img" style={{backgroundImage: item.img ? `url('${item.img}')` : 'none'}}></div>
+									<Fancybox>
+										<button className="portfolio-item__btn" data-src={item.img ? item.img : ''} data-fancybox="gallery">
+											<span className="portfolio-item__img" style={{backgroundImage: item.img ? `url('${item.img}')` : 'none'}}></span>
+										</button>
+									</Fancybox>
 								</div>
 								<span className="portfolio-item__name">{item.name}</span>
 								{item.project && 
