@@ -21,6 +21,7 @@ export const PortfolioPage = () => {
 			name: 'React Social',
 			project: 'React App',
 			link: 'https://github.com/kast96/social',
+			img: "/images/portfolio/social.jpg",
 			stack: [
 				{code: 'react', icon: <FaReact />},
 				{code: 'redux', icon: <SvgRedux />},
@@ -34,6 +35,7 @@ export const PortfolioPage = () => {
 			name: 'React Tasks',
 			project: 'React Native App',
 			link: 'https://github.com/kast96/tasks',
+			img: "/images/portfolio/tasks.jpg",
 			stack: [
 				{code: 'react', icon: <FaReact />},
 				{code: 'redux', icon: <SvgRedux />},
@@ -46,6 +48,7 @@ export const PortfolioPage = () => {
 			name: 'React Novel',
 			project: 'React App',
 			link: 'https://github.com/kast96/novel',
+			img: "/images/portfolio/novel.jpg",
 			stack: [
 				{code: 'react', icon: <FaReact />},
 				{code: 'redux', icon: <SvgRedux />},
@@ -58,6 +61,7 @@ export const PortfolioPage = () => {
 			name: 'React SpaceX',
 			project: 'React App',
 			link: 'https://github.com/kast96/spacex',
+			img: "/images/portfolio/spacex.jpg",
 			stack: [
 				{code: 'react', icon: <FaReact />},
 				{code: 'redux', icon: <SvgRedux />},
@@ -93,7 +97,7 @@ export const PortfolioPage = () => {
 			]
 		},
 		{
-			name: 'Module of redirects',
+			name: 'Redirects',
 			project: 'Module for 1C-Bitrix',
 			img: "/images/portfolio/redirects.jpg",
 			stack: [

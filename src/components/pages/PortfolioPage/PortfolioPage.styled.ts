@@ -23,7 +23,9 @@ export const PortfolioPageStyled = styled.div`
     background-color: ${(props) => props.theme.bgBtnColor}9;
     border-radius: 20px;
     padding: 20px;
+    height: 100%;
     overflow: hidden;
+    box-sizing: border-box;
 
     &__img-container {
       position: relative;
