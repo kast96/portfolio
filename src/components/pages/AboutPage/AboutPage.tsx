@@ -67,8 +67,8 @@ export const AboutPage = () => {
 						<div className="img" style={{backgroundImage: "url('/images/me.jpg')"}}></div>
 					</div>
 					<div className="personal-info-items">
-						{personalInfo.map(item => (
-							<div className="personal-info-item">
+						{personalInfo.map((item, key) => (
+							<div className="personal-info-item" key={key}>
 								<span className="personal-info-item__name">{item.name}:</span>
 								<span className="personal-info-item__value">{item.value}</span>
 							</div>
@@ -77,8 +77,8 @@ export const AboutPage = () => {
 				</div>
 				<h2 className="subtitle"><span>My Stack</span> and Expirience</h2>
 				<div className="stack">
-					{stack.map(item => (
-						<div className="stack-item">
+					{stack.map((item, key) => (
+						<div className="stack-item" key={key}>
 							<div className={`stack-item__icon icon-color--${item.code}`}>{item.icon}</div>
 							<div className="stack-item__name">{item.name}</div>
 						</div>
@@ -86,8 +86,8 @@ export const AboutPage = () => {
 				</div>
 				<h2 className="subtitle"><span>My Way</span> and Education</h2>
 				<div className="way">
-					{way.map(item => (
-						<div className="way-item">
+					{way.map((item, key) => (
+						<div className="way-item" key={key}>
 							<div className="way-item__left">
 								<div className="way-item__icon">
 									{item.icon}
