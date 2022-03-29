@@ -207,8 +207,8 @@ export const PortfolioPage = () => {
 			<div className="container container-page">
 				<h1 className="title">My <span>Portfolio</span></h1>
 				<div className="portfolio">
-					{portfolio.map(item => (
-						<div className="portfolio-item-container">
+					{portfolio.map((item, key) => (
+						<div className="portfolio-item-container" key={key}>
 							<div className="portfolio-item">
 								<div className="portfolio-item__img-container">
 									<Fancybox>
@@ -235,8 +235,8 @@ export const PortfolioPage = () => {
 								}
 								{item.stack && 
 									<div className="portfolio-item__stack">
-										{item.stack.map(stack =>
-											<div className={`portfolio-item__stack-icon icon-color--${stack.code}`}>
+										{item.stack.map((stack, key) =>
+											<div className={`portfolio-item__stack-icon icon-color--${stack.code}`} key={key}>
 												{stack.icon}
 											</div>
 										)}
