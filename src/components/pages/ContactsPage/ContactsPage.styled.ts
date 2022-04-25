@@ -65,4 +65,23 @@ export const ContactsPageStyled = styled.div`
       color: ${(props) => props.theme.mainColor};
     }
   }
+
+  .illustration {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 100px 0 60px;
+    padding: 0 20px;
+
+    @media screen and (max-width: 767px) {
+      margin: 60px 0 40px;
+    }
+  }
+
+  .illustration svg {
+    width: 700px;
+    height: 400px;
+    max-width: 100%;
+    color: ${(props) => props.theme.mainColor};
+  }
 `

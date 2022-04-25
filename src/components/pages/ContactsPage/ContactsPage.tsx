@@ -1,5 +1,6 @@
 import { FaAt, FaMapMarkerAlt, FaTelegramPlane } from "react-icons/fa"
 import { ContactsPageStyled } from "./ContactsPage.styled"
+import ContactsSvg from "../../../images/contacts"
 
 type ContactsItemType = {
   title: string
@@ -35,6 +36,9 @@ export const ContactsPage = () => {
 							</div>
 						</div>
 					))}
+				</div>
+				<div className="illustration">
+					<ContactsSvg />
 				</div>
       </div>
     </ContactsPageStyled>
