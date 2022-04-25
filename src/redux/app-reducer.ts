@@ -1,4 +1,4 @@
-import { InferActionsType } from "./redux-store";
+import { BaseThunkType, InferActionsType } from "./redux-store";
 
 const SET_THEME = 'portfolio/app/SET-THEME'
 
@@ -45,7 +45,21 @@ export const actions = {
   setTheme: (theme: ThemeType) => ({ type: SET_THEME, theme }) as const
 }
 
+export const setTheme = (theme: ThemeType): ThunkType => async (dispatch) => {
+  await dispatch(actions.setTheme(theme))
+  localStorage.setItem('theme', theme)
+}
+
+export const loadTheme = (): ThunkType => async (dispatch) => {
+  const theme = localStorage.getItem('theme') 
+  if (theme && Object.keys(THEMES).includes(theme)) {
+    //@ts-ignore
+    dispatch(actions.setTheme(theme))
+  }
+}
+
 type ActionsType = InferActionsType<typeof actions>
+type ThunkType = BaseThunkType<ActionsType>
 
 export type ThemeType = keyof typeof THEMES
 type ThemeNameType = { [key: string]: ThemeType }

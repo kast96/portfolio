@@ -1,19 +1,25 @@
-import { Provider, useSelector } from 'react-redux';
+import { Provider, useDispatch, useSelector } from 'react-redux';
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
 import Header from './components/Header/Header';
 import store from './redux/redux-store';
 import { getTheme } from './redux/app-selectors';
-import { THEMES } from './redux/app-reducer';
+import { loadTheme, THEMES } from './redux/app-reducer';
 import { ThemeProvider } from "styled-components";
 import { AppStyled } from './App.styled';
 import { HomePage } from './components/pages/HomePage/HomePage';
 import { AboutPage } from './components/pages/AboutPage/AboutPage';
 import { PortfolioPage } from './components/pages/PortfolioPage/PortfolioPage';
 import { ContactsPage } from './components/pages/ContactsPage/ContactsPage';
+import { useEffect } from 'react';
 
 const App = () => {
 	const themeName = useSelector(getTheme)
 	const theme = THEMES[themeName]
+	const dispatch = useDispatch()
+
+	useEffect(() => {
+		dispatch(loadTheme())
+	}, [dispatch])
 
 	return (
 		<ThemeProvider theme={theme}>
