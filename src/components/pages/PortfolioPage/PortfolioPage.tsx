@@ -19,6 +19,19 @@ export const PortfolioPage = () => {
 
 	let portfolio = [
 		{
+			name: 'React Travel App UI',
+			project: 'React Native App',
+			link: 'https://github.com/kast96/travelappui',
+			img: "/images/portfolio/travelappui.jpg",
+			stack: [
+				{code: 'react', icon: <FaReact />},
+				{code: 'ts', icon: <SvgTs />},
+				{code: 'js', icon: <FaJsSquare />},
+				{code: 'sass', icon: <FaSass />},
+				{code: 'git', icon: <FaGithub />},
+			]
+		},
+		{
 			name: 'React Social',
 			project: 'React App',
 			link: 'https://github.com/kast96/social',
