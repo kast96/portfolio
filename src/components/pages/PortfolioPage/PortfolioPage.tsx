@@ -19,6 +19,19 @@ export const PortfolioPage = () => {
 
 	let portfolio = [
 		{
+			name: 'React Recipes App',
+			project: 'React Native App',
+			link: 'https://github.com/kast96/recipes',
+			img: "/images/portfolio/recipes.jpg",
+			stack: [
+				{code: 'react', icon: <FaReact />},
+				{code: 'ts', icon: <SvgTs />},
+				{code: 'js', icon: <FaJsSquare />},
+				{code: 'css', icon: <FaCss3Alt />},
+				{code: 'git', icon: <FaGithub />},
+			]
+		},
+		{
 			name: 'React Travel App UI',
 			project: 'React Native App',
 			link: 'https://github.com/kast96/travelappui',
@@ -27,7 +40,7 @@ export const PortfolioPage = () => {
 				{code: 'react', icon: <FaReact />},
 				{code: 'ts', icon: <SvgTs />},
 				{code: 'js', icon: <FaJsSquare />},
-				{code: 'sass', icon: <FaSass />},
+				{code: 'css', icon: <FaCss3Alt />},
 				{code: 'git', icon: <FaGithub />},
 			]
 		},
@@ -54,7 +67,7 @@ export const PortfolioPage = () => {
 				{code: 'react', icon: <FaReact />},
 				{code: 'redux', icon: <SvgRedux />},
 				{code: 'js', icon: <FaJsSquare />},
-				{code: 'sass', icon: <FaSass />},
+				{code: 'css', icon: <FaCss3Alt />},
 				{code: 'git', icon: <FaGithub />},
 			]
 		},
